@@ -69,7 +69,7 @@ When migrating from v1 to v2, the following methods have changed:
 + async function remove(tracks: number | number[]): Promise<void> {
 
 - async function skip(trackId: string): Promise<void> {
-+ function skip(trackIndex: number): Promise<void> {
++ async function skip(trackIndex: number): Promise<void> {
 
 - async function updateMetadataForTrack(trackId: string, metadata: TrackMetadataBase): Promise<void> {
 + async function updateMetadataForTrack(trackIndex: number, metadata: TrackMetadataBase): Promise<void> {
